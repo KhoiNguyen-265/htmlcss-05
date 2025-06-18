@@ -18,6 +18,13 @@ body {
 }
 
 /* Common */
+input,
+textarea,
+select,
+button {
+    font-size: inherit;
+    font-family: inherit;
+}
 
 a {
     text-decoration: none;
@@ -33,7 +40,7 @@ a {
     --height: 58px;
 
     display: inline-block;
-    width: 149px;
+    min-width: 149px;
     height: var(--height);
     line-height: var(--height);
     border-radius: 8px;
@@ -42,6 +49,9 @@ a {
     text-align: center;
     font-size: 1.6rem;
     font-weight: 600;
+    outline: none;
+    border: none;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -52,7 +62,7 @@ a {
 .header__inner {
     display: flex;
     align-items: center;
-    padding-top: 42px;
+    padding: 42px 0 16px;
 }
 
 .navbar__list {
@@ -113,4 +123,188 @@ a {
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.75; /* 175% */
+}
+
+.action__btn {
+    --height: 52px;
+
+    min-width: 113px;
+}
+
+/* Hero */
+.hero {
+    padding: 60px 0 80px;
+}
+
+.hero__inner {
+    display: flex;
+    align-items: center;
+    column-gap: 160px;
+}
+
+.hero__content {
+    width: 46.2%;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 1.75; /* 175% */
+}
+
+.hero__label::before {
+    content: "";
+    margin-right: 12px;
+    display: inline-block;
+    width: 18px;
+    height: 2px;
+    background: var(--text-color);
+}
+
+.hero__heading {
+    margin-top: 12px;
+    color: var(--primary-color);
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.17; /* 116.667% */
+}
+
+.hero__heading--strong {
+    color: var(--second-color);
+}
+
+.hero__desc {
+    margin-top: 20px;
+    color: var(--text-color);
+    font-size: 1.8rem;
+    line-height: 1.67; /* 166.667% */
+}
+
+.hero-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 16px 42px 0px rgba(0, 0, 0, 0.07);
+}
+
+.hero-form__input {
+    padding: 23px;
+    outline: none;
+    border: none;
+    width: 100%;
+    color: var(--primary-color);
+}
+
+.hero-form__input::placeholder {
+    color: var(--text-color);
+    font-size: 1.6rem;
+    line-height: 1.75; /* 175% */
+}
+
+.hero-form__btn {
+    margin-right: 8px;
+    background: #7264d6;
+}
+
+.hero__ps {
+    margin-top: 20px;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.71; /* 171.429% */
+}
+
+.hero__media {
+    position: relative;
+    flex-grow: 1;
+}
+
+.hero__img {
+    width: 296px;
+    height: 562px;
+    object-fit: cover;
+}
+
+.hero-deposit {
+    position: absolute;
+    top: 113px;
+    left: -100px;
+    display: flex;
+    align-items: center;
+    padding: 14px 10px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+}
+
+.hero-deposit__label {
+    margin-left: 8px;
+    color: #31456a;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.hero-deposit__number {
+    margin-left: 19px;
+    color: #4ab5e3;
+    font-size: 1.4rem;
+    line-height: 1; /* 100% */
+}
+
+.hero-interest {
+    position: absolute;
+    top: 127px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #da6464;
+}
+
+.hero-interest__number {
+    color: #fff;
+    font-size: 4.4rem;
+    font-weight: 600;
+}
+
+.hero-interest__label {
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.hero-secured {
+    position: absolute;
+    bottom: 61px;
+    left: 246px;
+    display: flex;
+    align-items: center;
+    column-gap: 11px;
+    padding: 20px 14px;
+    border-radius: 10px;
+    background: #439f90;
+}
+
+.hero-secured__number {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.hero-secured__label {
+    margin-top: 5px;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1; /* 100% */
 }
