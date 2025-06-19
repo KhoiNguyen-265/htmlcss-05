@@ -59,6 +59,7 @@ a {
 }
 
 .section-heading {
+    margin-top: 12px;
     color: var(--primary-color);
     font-size: 4rem;
     font-weight: 700;
@@ -385,6 +386,7 @@ a {
 
 .work-success {
     position: absolute;
+    font-family: Inter;
     bottom: 96px;
     right: -100px;
     z-index: 2;
@@ -436,10 +438,6 @@ a {
 }
 
 /* Work content */
-.work__heading {
-    margin-top: 12px;
-}
-
 .work__list {
     margin-top: 70px;
 }
@@ -458,4 +456,235 @@ a {
 .work-item__desc {
     margin-top: 16px;
     font-size: 1.6rem;
+}
+
+/* Features */
+.features {
+    padding: 80px 0;
+}
+
+.features__inner {
+    display: flex;
+    align-items: center;
+    column-gap: 130px;
+}
+
+.features__content {
+    width: 40.2%;
+}
+
+.features__list {
+    margin-top: 28px;
+}
+
+.features-item {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    margin-top: 18px;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67; /* 166.667% */
+}
+
+.features-item::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--second-color);
+}
+
+.features__btn {
+    margin-top: 38px;
+}
+
+.features__media {
+    position: relative;
+}
+
+/* Features card */
+.features-card {
+    position: relative;
+    padding: 38px;
+    border-radius: 20px;
+    background: #8476e3;
+    color: #fff;
+    overflow: hidden;
+}
+
+.features-card__above {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    column-gap: 160px;
+}
+
+.features-card__title {
+    font-size: 2.4rem;
+}
+
+.features-card__number {
+    margin-top: 10px;
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.features-card__circle-wrap {
+    display: flex;
+}
+
+.features-card__circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #fe6565;
+}
+
+.features-card__circle:last-child {
+    position: relative;
+    background: #feef65;
+    margin-left: -16px;
+    overflow: hidden;
+}
+
+.features-card__circle-inner {
+    position: absolute;
+    left: -13px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 31px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #ffb228;
+}
+
+.features-card__under {
+    position: relative;
+    z-index: 1;
+    margin-top: 98px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 4px 26px;
+    width: fit-content;
+}
+
+.features-card__valid,
+.features-card__type {
+    font-size: 2rem;
+}
+
+.features-card__name,
+.features-card__time {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.features__deco-01,
+.features__deco-02 {
+    position: absolute;
+}
+
+.features__deco-01 {
+    top: -15px;
+    left: 0px;
+}
+
+.features__deco-02 {
+    right: -1px;
+    bottom: 0;
+}
+
+.features-history {
+    position: absolute;
+    top: -48px;
+    right: -88px;
+    display: flex;
+    align-items: center;
+    font-family: Inter;
+    padding: 23px 13px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.07);
+}
+
+.features-history__icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #fbf0f0;
+}
+
+.features-history__body {
+    margin-left: 14px;
+}
+
+.features-history__send {
+    display: flex;
+    align-items: center;
+}
+
+.features-history__title {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.features-history__quantity {
+    margin-left: 71px;
+    color: var(--primary-color);
+    font-size: 1.6rem;
+}
+
+.features-history__banking {
+    margin-top: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.features-history__bank,
+.features-history__time {
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.features-income {
+    position: absolute;
+    bottom: -55px;
+    right: -88px;
+    padding: 15px 53px 15px 15px;
+    border-radius: 16px;
+    background: #439f90;
+    color: #fff;
+}
+
+.features-income__icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 8px;
+    color: #439f90;
+}
+
+.features-income__title {
+    margin-top: 14px;
+    font-size: 1.2rem;
+    line-height: normal;
+}
+
+.features-income__quantity {
+    margin-top: 6px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: normal;
 }
