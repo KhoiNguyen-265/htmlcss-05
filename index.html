@@ -94,12 +94,19 @@
             rel="stylesheet"
         />
 
+        <!-- Animation -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./assets/css/animation.css" />
+
         <!-- Style CSS -->
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
     <body>
         <!-- Header -->
-        <header class="header">
+        <header class="header fixed">
             <div class="container">
                 <div class="header__inner">
                     <!-- Logo -->
@@ -153,22 +160,33 @@
                     <div class="hero__inner">
                         <!-- Hero content -->
                         <div class="hero__content">
-                            <p class="label">Digital Smart Wallet</p>
-                            <h1 class="hero__heading">
+                            <p class="label" data-aos="fade-down">
+                                Digital Smart Wallet
+                            </p>
+                            <h1 class="hero__heading" data-aos="fade-right">
                                 Digital
                                 <strong class="hero__heading--strong">
                                     Payment
                                 </strong>
                                 For Everyone.
                             </h1>
-                            <p class="hero__desc">
+                            <p
+                                class="hero__desc"
+                                data-aos="fade-left"
+                                data-aos-delay="1000"
+                            >
                                 We bring together everything that’s required to
                                 build websites and apps that accept payments and
                                 send payouts globally. We are the best platform.
                             </p>
 
                             <!-- Form -->
-                            <form action="" class="hero-form">
+                            <form
+                                action=""
+                                class="hero-form"
+                                data-aos="fade-up-right"
+                                data-aos-delay="1500"
+                            >
                                 <input
                                     type="email"
                                     id="email"
@@ -185,7 +203,7 @@
                                 </button>
                             </form>
 
-                            <p class="hero__ps">
+                            <p class="hero__ps" data-aos="fade-up-left">
                                 *We’ll respect the inbox and never share your
                                 email.
                             </p>
@@ -193,7 +211,7 @@
 
                         <!-- Hero media -->
                         <div class="hero__media">
-                            <figure class="hero__img-wrap">
+                            <figure class="hero__img-wrap" data-aos="fade-down">
                                 <img
                                     src="./assets/img/hero-img.png"
                                     alt=""
@@ -252,7 +270,10 @@
                     <div class="work__inner">
                         <!-- Media -->
                         <div class="work__media">
-                            <figure class="work__img-wrap">
+                            <figure
+                                class="work__img-wrap"
+                                data-aos="fade-right"
+                            >
                                 <img
                                     src="./assets/img/work-img.png"
                                     alt=""
@@ -301,17 +322,28 @@
 
                         <!-- Content -->
                         <div class="work__content">
-                            <p class="label">Digital Smart Wallet</p>
-                            <h2 class="section-heading work__heading">
+                            <p class="label" data-aos="fade-down">
+                                Digital Smart Wallet
+                            </p>
+                            <h2
+                                class="section-heading work__heading"
+                                data-aos="flip-left"
+                            >
                                 How It Works
                             </h2>
                             <ul class="work__list">
                                 <!-- Work item 1 -->
                                 <li class="work-item">
-                                    <h3 class="work-item__title">
+                                    <h3
+                                        class="work-item__title"
+                                        data-aos="fade-left"
+                                    >
                                         1. Open a High Interest Checking account
                                     </h3>
-                                    <p class="section-desc work-item__desc">
+                                    <p
+                                        class="section-desc work-item__desc"
+                                        data-aos="fade-right"
+                                    >
                                         Fund your bank account with a minimum
                                         balance of $100. Enroll in 3 minutes or
                                         less!
@@ -320,11 +352,17 @@
 
                                 <!-- Work item 2 -->
                                 <li class="work-item">
-                                    <h3 class="work-item__title">
+                                    <h3
+                                        class="work-item__title"
+                                        data-aos="fade-left"
+                                    >
                                         2. 10 point-of-sale transactions each
                                         Month that are at least $10 each.
                                     </h3>
-                                    <p class="section-desc work-item__desc">
+                                    <p
+                                        class="section-desc work-item__desc"
+                                        data-aos="fade-right"
+                                    >
                                         Be sure to use your rewards checking
                                         account as often as possible in order to
                                         accue APYI
@@ -333,10 +371,16 @@
 
                                 <!-- Work item 3 -->
                                 <li class="work-item">
-                                    <h3 class="work-item__title">
+                                    <h3
+                                        class="work-item__title"
+                                        data-aos="fade-left"
+                                    >
                                         3. Receive up to 5.50% APY
                                     </h3>
-                                    <p class="section-desc work-item__desc">
+                                    <p
+                                        class="section-desc work-item__desc"
+                                        data-aos="fade-right"
+                                    >
                                         The APY you earn will be based on your
                                         account balance and satisfying the
                                         transaction requirement.
@@ -354,19 +398,39 @@
                     <div class="features__inner">
                         <!-- Features content -->
                         <div class="features__content">
-                            <div class="label">Digital Smart Wallet</div>
-                            <h2 class="section-heading features__heading">
+                            <div class="label" data-aos="fade-down">
+                                Digital Smart Wallet
+                            </div>
+                            <h2
+                                class="section-heading features__heading"
+                                data-aos="flip-left"
+                            >
                                 One Card For All Your Payments
                             </h2>
-                            <p class="section-desc">
+                            <p class="section-desc" data-aos="fade-right">
                                 We bring together everything that’s required to
                                 build websites and apps that accept payments and
                                 send payouts globally. We are the best platform.
                             </p>
                             <ul class="section__list">
-                                <li class="section-item">Global Payments</li>
-                                <li class="section-item">One-Click Purchase</li>
-                                <li class="section-item">Friendly Price</li>
+                                <li
+                                    class="section-item"
+                                    data-aos="fade-down-right"
+                                >
+                                    Global Payments
+                                </li>
+                                <li
+                                    class="section-item"
+                                    data-aos="fade-down-right"
+                                >
+                                    One-Click Purchase
+                                </li>
+                                <li
+                                    class="section-item"
+                                    data-aos="fade-down-right"
+                                >
+                                    Friendly Price
+                                </li>
                             </ul>
                             <a href="#!" class="btn features__btn">
                                 Get Started
@@ -376,7 +440,7 @@
                         <!-- Features media -->
                         <div class="features__media">
                             <!-- Features card -->
-                            <div class="features-card">
+                            <div class="features-card" data-aos="zoom-in">
                                 <div class="features-card__above">
                                     <div class="features-card__content">
                                         <h3 class="features-card__title">
@@ -487,7 +551,7 @@
                 <div class="container">
                     <div class="bank__inner">
                         <div class="bank__media">
-                            <figure class="bank__img-wrap">
+                            <figure class="bank__img-wrap" data-aos="zoom-in">
                                 <img
                                     src="./assets/img/bank-img.png"
                                     alt=""
@@ -559,21 +623,34 @@
                             </div>
                         </div>
                         <div class="bank__content">
-                            <p class="label">Digital Smart Wallet</p>
-                            <h2 class="section-heading">
+                            <p class="label" data-aos="fade-down">
+                                Digital Smart Wallet
+                            </p>
+                            <h2 class="section-heading" data-aos="flip-left">
                                 Transfer and Deposit Your Money Anytime
                             </h2>
-                            <p class="section-desc">
+                            <p class="section-desc" data-aos="fade-right">
                                 We bring together everything that’s required to
                                 build websites and apps that accept payments and
                                 send payouts globally. We are the best platform.
                             </p>
                             <ul class="section__list">
-                                <li class="section-item">Powerful App</li>
-                                <li class="section-item">
+                                <li
+                                    class="section-item"
+                                    data-aos="fade-down-right"
+                                >
+                                    Powerful App
+                                </li>
+                                <li
+                                    class="section-item"
+                                    data-aos="fade-down-right"
+                                >
                                     Transparency And Speed
                                 </li>
-                                <li class="section-item">
+                                <li
+                                    class="section-item"
+                                    data-aos="fade-down-right"
+                                >
                                     Multiple Use Capabilities
                                 </li>
                             </ul>
@@ -586,11 +663,16 @@
             <!-- Review -->
             <section class="review">
                 <div class="container">
-                    <p class="label review__label">Our Testimonial</p>
-                    <h2 class="section-heading review__heading">
+                    <p class="label review__label" data-aos="fade-down">
+                        Our Testimonial
+                    </p>
+                    <h2
+                        class="section-heading review__heading"
+                        data-aos="flip-left"
+                    >
                         What Clients Says
                     </h2>
-                    <p class="section-desc review__desc">
+                    <p class="section-desc review__desc" data-aos="fade-right">
                         Read what clients says about us and about our online
                         banking services that may inspire you
                     </p>
@@ -755,11 +837,17 @@
                 <div class="container">
                     <div class="blog__content">
                         <div class="blog__body">
-                            <p class="label">Our Blog</p>
-                            <h2 class="section-heading blog__heading">
+                            <p class="label" data-aos="fade-down">Our Blog</p>
+                            <h2
+                                class="section-heading blog__heading"
+                                data-aos="flip-left"
+                            >
                                 Get The Updates
                             </h2>
-                            <p class="section-desc blog__desc">
+                            <p
+                                class="section-desc blog__desc"
+                                data-aos="fade-right"
+                            >
                                 Read our blog for the regular updates about us
                                 and about our online banking services that may
                                 inspire you
@@ -860,12 +948,18 @@
             <section class="cta">
                 <div class="container">
                     <div class="cta__inner">
-                        <div class="cta__content">
+                        <div class="cta__content" data-aos="fade-down">
                             <p class="label cta__label">Our App</p>
-                            <h2 class="section-heading cta__heading">
+                            <h2
+                                class="section-heading cta__heading"
+                                data-aos="flip-left"
+                            >
                                 Download the Apps
                             </h2>
-                            <p class="section-desc cta__desc">
+                            <p
+                                class="section-desc cta__desc"
+                                data-aos="fade-right"
+                            >
                                 Download our mobile apps and get started today
                                 with a special online bank and move faster
                             </p>
@@ -1013,5 +1107,13 @@
                 </p>
             </div>
         </footer>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1000,
+                anchorPlacement: "center-center",
+            });
+        </script>
     </body>
 </html>

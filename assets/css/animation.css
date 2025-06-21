@@ -1,0 +1,119 @@
+@keyframes floatLeftRight {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-10px);
+    }
+
+    75% {
+        transform: translateX(10px);
+    }
+}
+
+@keyframes floatRightLeft {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(10px);
+    }
+
+    75% {
+        transform: translateX(-10px);
+    }
+}
+
+@keyframes floatUpDown {
+    0%,
+    60% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-6px);
+    }
+
+    75% {
+        transform: translateY(6px);
+    }
+}
+
+@keyframes ripplePurple {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgb(110, 100, 214, 0.6);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 15px rgb(110, 100, 214, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 15px rgb(110, 100, 214, 0);
+    }
+}
+
+@keyframes rippleRed {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgb(218, 100, 100, 0.6);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 15px rgb(218, 100, 100, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 15px rgb(218, 100, 100, 0);
+    }
+}
+
+@keyframes rippleBlack {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgb(30, 40, 50, 0.6);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 15px rgb(30, 40, 50, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 15px rgb(30, 40, 50, 0);
+    }
+}
+
+@keyframes rippleWhite {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgb(255, 255, 255, 0.6);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 15px rgb(255, 255, 255, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 15px rgb(255, 255, 255, 0);
+    }
+}
+
+@keyframes rippleGreen {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgb(67, 159, 144, 0.6);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 15px rgb(67, 159, 144, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 15px rgb(67, 159, 144, 0);
+    }
+}

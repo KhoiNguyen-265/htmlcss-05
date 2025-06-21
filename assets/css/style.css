@@ -36,6 +36,13 @@ a {
     margin: 0 auto;
 }
 
+.fixed {
+    position: sticky;
+    z-index: 5;
+    top: -35px;
+    background: #fff;
+}
+
 .btn {
     --height: 58px;
 
@@ -224,6 +231,7 @@ a {
 .hero-form__btn {
     margin-right: 8px;
     background: #7264d6;
+    animation: ripplePurple 3s infinite;
 }
 
 .hero__ps {
@@ -255,6 +263,7 @@ a {
     border-radius: 6px;
     background: #fff;
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+    animation: floatLeftRight 3s linear infinite;
 }
 
 .hero-deposit__label {
@@ -284,6 +293,7 @@ a {
     height: 130px;
     border-radius: 50%;
     background: #da6464;
+    animation: rippleRed 3s infinite;
 }
 
 .hero-interest__number {
@@ -307,6 +317,7 @@ a {
     padding: 20px 14px;
     border-radius: 10px;
     background: #439f90;
+    animation: floatUpDown 3s linear infinite;
 }
 
 .hero-secured__number {
@@ -372,6 +383,7 @@ a {
     height: 64px;
     border-radius: 8px;
     background: #7264d6;
+    animation: ripplePurple 3s infinite;
 }
 
 .work__logo {
@@ -390,6 +402,7 @@ a {
     bottom: 96px;
     right: -100px;
     z-index: 2;
+    animation: floatLeftRight 3s linear infinite;
 }
 
 .work-success__inner {
@@ -500,6 +513,7 @@ a {
 .features__btn,
 .bank__btn {
     margin-top: 38px;
+    animation: rippleBlack 3s infinite;
 }
 
 .features__media {
@@ -611,6 +625,7 @@ a {
     border-radius: 12px;
     background: #fff;
     box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.07);
+    animation: floatLeftRight 3s linear infinite;
 }
 
 .features-history__icon-wrap {
@@ -664,6 +679,7 @@ a {
     border-radius: 16px;
     background: #439f90;
     color: #fff;
+    animation: rippleGreen 3s infinite;
 }
 
 .features-income__icon-wrap {
@@ -740,6 +756,7 @@ a {
     background: #fff;
     border-radius: 10px;
     box-shadow: 0px 44px 48px rgba(0, 0, 0, 0.1);
+    animation: floatLeftRight 3s linear infinite;
 }
 
 .bank__title {
@@ -783,6 +800,7 @@ a {
     height: 90px;
     border-radius: 50%;
     background: var(--second-color);
+    animation: floatUpDown 3s linear infinite;
 }
 
 /* Review */
@@ -842,6 +860,7 @@ a {
 }
 
 .review-item__quote-wrap:hover {
+    animation: none !important;
     transform: translateY(-20px);
     border-color: transparent;
     filter: drop-shadow(0px 22px 54px rgba(0, 0, 0, 0.07));
@@ -939,6 +958,7 @@ a {
 
 .blog__btn {
     min-width: 123px;
+    animation: rippleBlack 3s infinite;
 }
 
 .blog__list {
@@ -1045,6 +1065,7 @@ a {
     padding: 16px 24px;
     background: #fff;
     border-radius: 8px;
+    animation: rippleWhite 3s infinite;
 }
 
 .cta__star {
@@ -1054,21 +1075,25 @@ a {
 .cta__star--01 {
     top: 49px;
     left: 112px;
+    animation: floatRightLeft 3s linear infinite;
 }
 
 .cta__star--02 {
     top: 49px;
     right: 112px;
+    animation: floatLeftRight 3s linear infinite;
 }
 
 .cta__star--03 {
     bottom: 49px;
     left: 166px;
+    animation: floatLeftRight 3s linear infinite;
 }
 
 .cta__star--04 {
     bottom: 49px;
     right: 166px;
+    animation: floatRightLeft 3s linear infinite;
 }
 
 /* Footer */
@@ -1147,6 +1172,7 @@ a {
     --height: 52px;
     min-width: 113px;
     background: var(--second-color);
+    animation: ripplePurple 3s infinite;
 }
 
 .footer__contact {
