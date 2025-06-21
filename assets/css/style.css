@@ -1000,7 +1000,7 @@ a {
 
 /* CTA */
 .cta {
-    padding: 80px 0;
+    padding: 80px 0 100px;
 }
 
 .cta__inner {
@@ -1069,4 +1069,114 @@ a {
 .cta__star--04 {
     bottom: 49px;
     right: 166px;
+}
+
+/* Footer */
+.footer {
+    padding: 100px 0 0;
+    background: #fafbff;
+}
+
+.footer__above {
+    display: flex;
+    column-gap: 163px;
+}
+
+.footer__title {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67; /* 166.667% */
+}
+
+.footer__list {
+    margin-top: 14px;
+}
+
+.footer-item__link {
+    display: inline-block;
+    margin-top: 10px;
+    color: rgb(106, 110, 120, 0.75);
+    font-size: 1.8rem;
+    line-height: 1.67;
+}
+
+.footer-item__link:hover {
+    text-decoration: underline;
+}
+
+.footer__desc {
+    max-width: 371px;
+    margin-top: 24px;
+    margin-bottom: 48px;
+    color: rgb(106, 110, 120, 0.75);
+    font-size: 1.8rem;
+    line-height: 1.67; /* 166.667% */
+}
+
+.footer-form {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.footer-form__input {
+    height: 52px;
+    padding: 12px;
+    width: 270px;
+    outline: none;
+    border-radius: 6px;
+    border: 1px solid #8e919a;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    transition: 0.3s;
+}
+
+.footer-form__input::placeholder {
+    color: rgb(142, 145, 154, 0.7);
+    font-size: 1.6rem;
+    line-height: 1.75; /* 175% */
+}
+
+.footer-form__input:focus {
+    border-color: var(--second-color);
+}
+
+.footer-form__btn {
+    --height: 52px;
+    min-width: 113px;
+    background: var(--second-color);
+}
+
+.footer__contact {
+    margin-top: 54px;
+    display: flex;
+    column-gap: 100px;
+}
+
+.footer__email,
+.footer__info {
+    color: var(--text-color);
+    font-size: 1.8rem;
+    line-height: 1.67; /* 166.667% */
+}
+
+.footer__email:hover,
+.footer__info:hover {
+    text-decoration-line: underline;
+    text-decoration-skip-ink: none;
+}
+
+.footer__end {
+    margin-top: 28px;
+    padding: 28px 0;
+    background: var(--second-color);
+}
+
+.footer__copy-right {
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.75; /* 175% */
 }
